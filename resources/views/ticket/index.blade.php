@@ -44,10 +44,11 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($tickets as $ticket)
-                                    @if($tickets['id_estado'] == '1')
+                                    @if($ticket['id_estado'] == '6')
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
+                                            <td>{{ $ticket->id }}</td>
 											<td>{{ $ticket->descripcion }}</td>
 											<td>{{ $ticket->estado->nombre_estado }}</td>
 
